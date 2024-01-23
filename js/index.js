@@ -67,6 +67,7 @@ form.addEventListener("submit", (e) => {
 
   let nomeproduto = document.getElementById("iplust").value;
   let precoproduto = document.getElementById("inumt").value;
+  let urlproduto = document.getElementById("iurlt").value;
 
   let novobanner = document.createElement("div");
   let novoimagem = document.createElement("div");
@@ -86,7 +87,7 @@ form.addEventListener("submit", (e) => {
   let produtoadicionado = new Produto(
   `${nomeproduto}`,
   Number(precoproduto),
-  "https://images.pexels.com/photos/35860/forge-craft-hot-form.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  urlproduto
   );
 
   banners = document.getElementsByClassName("banner");
